@@ -18,7 +18,7 @@ jobs:
         id: hello
         
       - name: Set environment variables
-        run: echo 'Hello $FIRST_NAME $last_name'
+        run: echo Hello $FIRST_NAME $last_name
         env:
           FIRST_NAME: Nick
           last_name: Trogh    
