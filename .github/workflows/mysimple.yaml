@@ -4,6 +4,7 @@ name: Simple Workflow
 
 on:
   push
+  
 
 jobs:
   build:
@@ -16,6 +17,4 @@ jobs:
           who-to-greet: Howest
         id: hello
         
-      - name: Get output from hello action
-        run: echo "The time is ${{ hello.outputs.time }}"
-        
+            
