@@ -27,3 +27,12 @@ jobs:
         uses: wei/curl@master
         with:
           args: https://api.chucknorris.io/jokes/random
+
+      - name: 'Call API'
+        uses: indiesdev/curl@v1
+        id: api
+        with:
+          url: https://api.chucknorris.io/jokes/random
+          method: 'GET'
+      - name: 'Use response'
+        run: echo ${{ steps.api.outputs.response }}
