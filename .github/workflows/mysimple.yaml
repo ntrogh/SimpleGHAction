@@ -23,5 +23,5 @@ jobs:
           FIRST_NAME: Nick
           last_name: Trogh
           
-      - name: Add Quotes or facts to README
-        uses: akhildaphara/quote-readme@quote-readme
+      - name: Star Wars quote action
+        uses: Skitionek/star-wars-quote-action@v0.0.2
