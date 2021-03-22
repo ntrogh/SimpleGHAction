@@ -22,6 +22,8 @@ jobs:
         env:
           FIRST_NAME: Nick
           last_name: Trogh
-          
-      - name: Star Wars quote action
-        uses: Skitionek/star-wars-quote-action@v0.0.2
+
+      - name: curl
+        uses: wei/curl@master
+        with:
+          args: https://api.chucknorris.io/jokes/random
