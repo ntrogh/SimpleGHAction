@@ -35,4 +35,4 @@ jobs:
           url: "https://api.chucknorris.io/jokes/random"
           method: "GET"
       - name: Show Response
-        run: echo ${{fromJSON(steps.myRequest.outputs.response).value}}
+        run: echo "${{ fromJSON(steps.myRequest.outputs.response).value}}"
