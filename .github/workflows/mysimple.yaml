@@ -28,11 +28,10 @@ jobs:
         with:
           args: https://api.chucknorris.io/jokes/random
 
-      - name: 'Call API'
-        uses: indiesdev/curl@v1
-        id: api
+      - name: Make Request
+        id: myRequest
+        uses: fjogeleit/http-request-action@master
         with:
-          url: https://api.chucknorris.io/jokes/random
-          method: 'GET'
-      - name: 'Use response'
-        run: echo ${{ steps.api.outputs.response }}
+          url: "http://yoursite.com/api"
+      - name: Show Response
+        run: echo ${{ steps.myRequest.outputs.response }}
