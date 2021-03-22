@@ -21,4 +21,7 @@ jobs:
         run: echo Hello $FIRST_NAME $last_name
         env:
           FIRST_NAME: Nick
-          last_name: Trogh    
+          last_name: Trogh
+          
+      - name: Add Quotes or facts to README
+        uses: akhildaphara/quote-readme@quote-readme
